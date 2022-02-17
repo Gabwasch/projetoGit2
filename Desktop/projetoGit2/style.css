@@ -166,6 +166,7 @@ nav a:hover {
 	border-radius: 10px 10px 10px 10px;
 }
 /*------------------Fim Configuração do cabeçalho----------------------*/
+
 /*------------------------------fim da pagina inicial-------------------------------*/
 
 /* ------------------Início da pagina de Login----------------*/
@@ -203,88 +204,131 @@ nav a:hover {
 
 
 /*------------------configuração da pagina de cardápio----------------------*/
-
-
-#casquinha{
-	vertical-align: super;
-	float: right;
-	padding: 15px;
-	width: 10%;
-	box-sizing: border-box;
-}
-.cardapio{
-	vertical-align: top;
+.caixa2{
 	display: inline-block;
-	text-align: center;
-	width: 75%;
-	margin: 2px;
-	padding:2px;
-}
-
-#casquinha2{
-	vertical-align: baseline;
-	/*float: left;*/
-	display: inline-block;
-	padding: 15px;
-	width: 10%;
+	width: 100%;
+	height: 100%;
 	box-sizing: border-box;
-}
-
-.cardapio li{
-	display: inline-block;
-	text-align: center;
-	background: #F08080;
-	width: 60%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid white;
+	border: 2px solid #8B0000;
 	border-radius: 30px 30px 30px 30px;
-}
-label li{
-	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
+	transition: 1.5s all;
 }
 
-.cardapio li:hover {
-	border-color: #F08080;
+
+#picole-img{
+	position: relative;
+	display: flex;
+	width: 700px;
+	height: 470px;
 }
 
-.cardapio li:hover h2{
-	font-size: 34px;
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 700px;
+	height: 470px;
+	border: 2px solid #8B0000;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
-.cardapio h2{
-	font-size: 30px;
-	font-weight: bold;
+  
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
-
-.legenda{
-	font-size: 22px;
-	font-weight: bold; 
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
 }
-
-.tabela-preço{
-	background: #3CB371;
+  
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	color: black;
+	box-sizing: border-box;
+}
+  
+  /* Style the back side */
+  .flip-card-back {
 	color: white;
-	margin: 20px 0 40px;
+	transform: rotateY(180deg);
 }
-.preços{
-	background: #125e34;
+/* The flip card container - set the width and height to whatever you want.*/
+.flip-card {
+	background-color: transparent;
+	width: 700px;
+	height: 470px;
+	border: 2px solid #8B0000;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/*---------------------------------fim do primeiro card---------------------------------*/
+
+#milkshake-img{
+	position: relative;
+	display: flex;
+	width: 700px;
+	height: 470px;
+}
+
+/* This container is needed to position the front and back side */
+.card-flip-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card-flip:hover .card-flip-inner {
+	transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.card-flip-front, .card-flip-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+  .card-flip-front {
+	color: black;
+	box-sizing: border-box;
+}
+  
+  /* Style the back side */
+  .card-flip-back {
 	color: white;
-	font-weight: bold;
+	transform: rotateY(180deg);
 }
-
-.tabela-body{
-	border: 1px solid #125e34;
-	padding: 15px 8px;
+.card-flip {
+	background-color: transparent;
+	width: 700px;
+	height: 470px;
+	border: 2px solid #8B0000;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
-.celulas{
-	border: 1px solid #125e34;
-	padding: 15px 8px;
+#sundae-img{
+	width: 40%;
 }
-
 /*-----------------fim de cardapio-----------------*/
 
 /* -----------------pagina especiais -----------------*/
