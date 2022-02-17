@@ -1,5 +1,5 @@
 header{
-	background: linear-gradient(#ffffff);
+	background: linear-gradient(#ffffff, #ffffff);
 	padding: 20px 0;
 }
 title:after{
@@ -8,9 +8,9 @@ title:after{
 
 body{
 	font-family: 'Roboto', sans-serif;
-	background: linear-gradient(#e2e2e2);
+	background: linear-gradient(#585858, #979696, #FFFFFF, #ffffff);
 }
-/*o css da página inicial*/
+/*----------------------o css da página inicial--------------------*/
 
 .Titulo-principal{
 	text-align: left;
@@ -24,6 +24,7 @@ body{
 
 .principal {
 	width: 100%;
+	margin: 10px 0;
 	color: white; 
 	display: inline-block;
 	background: #F08080;
@@ -33,7 +34,7 @@ body{
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
 }
-/* paragrafo 2 da pagina principal*/
+/* ---------------------paragrafo 2 da pagina principal----------------------*/
 .principal2 {
 
 	color: white; 
@@ -44,27 +45,29 @@ body{
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
-	margin: 25px 0;
+	margin: 10px 0;
 }
 
 .beneficios{
 	padding: 3em 0;
 	color: white;
 	position: relative;
-	background: #8B0000;
+	background: #F08080;
 	padding: 30px 20px;
-	box-shadow: inset 0 0 40px white;
+	box-shadow: inset 0 0 40px #8B0000;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
-	margin: 75px 0;
+	margin: 15px 0;
+	border-radius: 10px 10px 10px 10px;
 }
 .video{
 	text-align: center;
-	background:#8B0000;
+	background:#F08080;
 	padding: 30px 20px;
-	box-shadow: inset 0 0 40px white;
+	box-shadow: inset 0 0 40px #8B0000;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -102,7 +105,7 @@ body{
 	line-height: 1.5;
 }
 
-/*contúdo antes de cada item*/
+/*------------------------contúdo antes de cada item em benefícios------------------*/
 
 .itens:before{
 	content: "✵";
@@ -124,19 +127,23 @@ body{
 .sorvetin:hover{
 	opacity: 0.3;
 }
-
-.caixa{
+/*------------------Configuração do cabeçalho----------------------*/
+.logo{
 	position: relative;
 	width: 940px;
 	margin: 0 auto;
-}	
+}
+.login-menu{
+	position: relative;
+	float: inline-end;
+	width: 30%;
+	margin: 0px 800px;
+}
 
-
-nav{
-	position: absolute;
-	top: 110px;
-	right: 0;
-
+.menu-completo{
+	position: relative;
+	width: 700px;
+	margin: 0px 450px;
 }
 
 nav li{
@@ -146,7 +153,7 @@ nav li{
 
 nav a{
 	text-transform: uppercase;
-	color: #000000;
+	color: green;
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none;
@@ -158,15 +165,44 @@ nav a:hover {
 	border: 2px solid rgb(160, 50, 50);
 	border-radius: 10px 10px 10px 10px;
 }
-/*fim da pagina inicial*/
+/*------------------Fim Configuração do cabeçalho----------------------*/
+/*------------------------------fim da pagina inicial-------------------------------*/
+
 /* ------------------Início da pagina de Login----------------*/
-
-
+.email{
+	width: auto;
+	color: white; 
+	display: inline-block;
+	background: #F08080;
+	padding: 15px 0px;
+	box-shadow: inset 0 0 40px #8B0000;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+}
+.senha{
+	width: auto;
+	margin: 0px 0px;
+	color: white; 
+	display: inline-block;
+	background: #F08080;
+	padding: 15px 0px;
+	box-shadow: inset 0 0 40px #8B0000;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+}
+.input-login{
+	display: block;
+	margin: 0 auto 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
 
 /* ------------------fim da pagina de Login----------------*/
 
 
-/*configuração da pagina de cardápio*/
+/*------------------configuração da pagina de cardápio----------------------*/
 
 
 #casquinha{
@@ -204,7 +240,7 @@ nav a:hover {
 	padding: 30px 20px;
 	box-sizing: border-box;
 	border: 2px solid white;
-	border-radius: 10px 20px 30px 40px;
+	border-radius: 30px 30px 30px 30px;
 }
 label li{
 	display: block;
@@ -228,6 +264,27 @@ label li{
 	font-size: 22px;
 	font-weight: bold; 
 }
+
+.tabela-preço{
+	background: #3CB371;
+	color: white;
+	margin: 20px 0 40px;
+}
+.preços{
+	background: #125e34;
+	color: white;
+	font-weight: bold;
+}
+
+.tabela-body{
+	border: 1px solid #125e34;
+	padding: 15px 8px;
+}
+.celulas{
+	border: 1px solid #125e34;
+	padding: 15px 8px;
+}
+
 /*-----------------fim de cardapio-----------------*/
 
 /* -----------------pagina especiais -----------------*/
@@ -340,7 +397,7 @@ form label, form legend{
 	transform: scale(1.15);
 }
 
-table{
+.horario{
 	background: green;
 	color: white;
 	margin: 20px 0 40px;
@@ -356,20 +413,21 @@ td, th{
 	border: 1px solid #3CB371;
 	padding: 15px 8px;
 }
-/*fim da pagina contato*/
+/*--------------------fim da pagina contato------------------*/
 
-/*inicio da pagina mapa*/
+/*--------------------inicio da pagina mapa------------------*/
 .mapa-conteudo{
 	
 	text-align: center;
 }
 .mapa{
 	padding: 3em 0;
-	background: #006400;
+	background: #F08080;
 	padding: 30px 20px;
 	box-shadow: inset 0 0 40px #8B0000;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
 }
 
 .mapa p{
@@ -377,9 +435,9 @@ td, th{
 	text-align: center;
 	color: white;
 }
-/*fim da pagina mapa*/
+/*-----------------------fim da pagina mapa--------------------*/
 
-/*configuração do Rodapé*/
+/*------------------------configuração do Rodapé----------------*/
 
 footer{
 	text-align: center;
@@ -397,28 +455,30 @@ footer{
 	width: 10%;
 }
 
-/*fim do rodapé*/
+/*---------------------fim do rodapé----------------------------*/
 
-/* botão para navegar para outras páginas*/
+/* ------------botão para navegar para outras páginas-----------*/
 
 .Voltar:hover{
 	color: #FFFFFF;
 	text-decoration: underline;
 }
 .Voltar{
+	padding: 10px 10px;
 	display: inline-block;
-	background: #006400;
+	background: #F08080;
 	text-align: center;
 	text-transform: uppercase;
-	color: #000000;
+	color: green;
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none;
+	color: rgb(139, 44, 44);
 	box-sizing: border-box;
-	border: 2px solid #8B0000;
-	border-radius: 10px;
-	margin: 10px 10px 10px 10px;
-	padding: 10px 10px 10px 10px;
+	box-shadow: inset 0 0 20px #F08080;
+	border: 2px solid rgb(160, 50, 50);
+	border-radius: 10px 10px 10px 10px;
+	margin: 20px 0;
 }
 .login{
 	background: #006400;
