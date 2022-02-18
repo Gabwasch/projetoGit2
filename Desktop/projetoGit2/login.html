@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 		<header>
 
 			<div class="login-menu">
@@ -22,7 +22,7 @@
 			</div>
 
 			<div class="logo">
-				<h1><img id="didio" src="didio.png"></h1>
+				<h1><img id="didio" src="images/didio.png"></h1>
 			</div>
 
 			<div class="menu-completo">
@@ -39,23 +39,52 @@
 		</header>
 		<main>
 
-			<form>
-				<fieldset class="email">
-						<label for="email">Email</label>
-						<input type="email" id="email" class="input-login" required placeholder="seuemail@dominio.com.br">
-				</fieldset>
 
-				<fieldset class="senha">
-						<label for="senha">Senha</label>
-						<input type="tel" id="senha" class="input-login" required placeholder="Digite sua Senha">
-				</fieldset>
-			</form>
-			<p>Esqueceu a senha?</p>
+			<div id="login">
+
+				<form class="card">
+
+					<div class="card-header">
+
+    	                <h2>Login</h2>
+
+        	        </div>
+
+            	    <div class="card-content">
+
+                	    <div class="card-content-area">
+
+                    	    <label for="usuario">Usuário</label>
+
+                        	<input type="text" id="usuario" autocomplete="off">
+
+                    	</div>
+
+						<div class="card-content-area">
+
+							<label for="password">Senha</label>
+
+							<input type="password" id="password" autocomplete="off">
+
+						</div>
+
+              		</div>
+
+					<div class="card-footer">
+
+						<input type="submit" value="login" class="submit">
+
+						<a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+					</div>
+
+				</form>
+			</div>
 		
 		<h4><a class="Voltar" href="index.html">Home</a></h4>
 		</main>
 		<footer>
-			<img id="copy" src="copy.gif" alt="Imagem de rodapé engraçada">
+			<img id="copy" src="images/copy.gif" alt="Imagem de rodapé engraçada">
 			<p class="copyright">&copy; Copyright Amigos - 2022</p>
 		</footer>
 	</body>

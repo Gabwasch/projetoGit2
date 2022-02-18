@@ -170,34 +170,88 @@ nav a:hover {
 /*------------------------------fim da pagina inicial-------------------------------*/
 
 /* ------------------Início da pagina de Login----------------*/
-.email{
-	width: auto;
-	color: white; 
-	display: inline-block;
-	background: #F08080;
-	padding: 15px 0px;
-	box-shadow: inset 0 0 40px #8B0000;
-	box-sizing: border-box;
-	border: 2px solid #8B0000;
-	border-radius: 10px 10px 10px 10px;
+body {
+   padding: 0;
+   margin: 0;
+   background-color: #454d6b;
 }
-.senha{
-	width: auto;
-	margin: 0px 0px;
-	color: white; 
-	display: inline-block;
-	background: #F08080;
-	padding: 15px 0px;
-	box-shadow: inset 0 0 40px #8B0000;
-	box-sizing: border-box;
-	border: 2px solid #8B0000;
-	border-radius: 10px 10px 10px 10px;
+
+#login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.input-login{
+	
+.card {
+	background-color: rgba(19, 19, 19, 0.3);
+	padding: 40px;
+	border-radius: 2px;
+	width:280px;
+}
+.card-header {
+	padding-bottom: 50px;
+	opacity: 0.8;
+	color: #fff;
+}
+.card-header::after {
+	content: "";
+	width: 70px;
+	height: 1px;
+	background-color: rgb(255, 255, 255);
 	display: block;
-	margin: 0 auto 20px;
-	padding: 10px 25px;
-	width: 50%;
+	margin-top: -17px;
+	margin-left: -5px;
+}
+.card-content label {
+	color: #fff;
+	font-size: 12px;
+	opacity: 0.8;
+}
+.card-content-area {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding:10px 0;
+	margin: 0 0 10px;
+	background-color: #F08080;
+	box-shadow: inset 0 0 20px #8B0000;
+	border: 2px solid rgb(160, 50, 50);
+	border-radius: 10px 10px 10px 10px;
+
+}
+	
+.card-content-area input {
+	margin-top: 10px;
+	padding:0 5px;
+	background-color: transparent;
+	border:none;
+	border-bottom: 1px solid #e1e1e1;
+	outline: none;
+	color: #fff;
+}
+
+.card-footer {
+   display: flex;
+   flex-direction: column;
+}
+
+.card-footer .submit{
+   width: 100%;
+   height: 40px;
+   background-color: #a13854;
+   border:none;
+   color:#e1e1e1;
+   margin: 10px 0;
+}
+
+.card-footer a {
+   text-align: center;
+   font-size: 12px;
+   opacity: 0.8;
+   color: #fff;
+   text-decoration: none;
 }
 
 /* ------------------fim da pagina de Login----------------*/
@@ -223,13 +277,6 @@ nav a:hover {
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-	background-color: transparent;
-	width: 700px;
-	height: 470px;
-	border: 2px solid #8B0000;
-	perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
   
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -266,14 +313,18 @@ nav a:hover {
 	color: white;
 	transform: rotateY(180deg);
 }
-/* The flip card container - set the width and height to whatever you want.*/
+
 .flip-card {
 	background-color: transparent;
+	margin: 50px 0px;
 	width: 700px;
 	height: 470px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+/* The flip card container - set the width and height to whatever you want.*/
+
 
 /*---------------------------------fim do primeiro card---------------------------------*/
 
@@ -321,14 +372,65 @@ nav a:hover {
 }
 .card-flip {
 	background-color: transparent;
+	margin: 50px 200px;
 	width: 700px;
 	height: 470px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
-#sundae-img{
-	width: 40%;
+/*-------------------------------fim do segunda card-----------------------*/
+
+/*-------------------------------inicio terceiro card--------------------------*/
+  
+/* This container is needed to position the front and back side */
+.card-flipp-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card-flipp:hover .card-flipp-inner {
+	transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.card-flipp-front, .card-flipp-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+  
+/* Style the front side (fallback if image is missing) */
+.card-flipp-front {
+	color: black;
+	box-sizing: border-box;
+}
+  
+  /* Style the back side */
+.card-flipp-back {
+	color: white;
+	transform: rotateY(180deg);
+}
+/* The flip card container - set the width and height to whatever you want.*/
+.card-flipp {
+	background-color: transparent;
+	margin: 50px 20px;
+	width: 250px;
+	height: 470px;
+	border: 2px solid #8B0000;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+#sundae-img{
+	width: 250px;
+	height: 470px;
+}
+
 /*-----------------fim de cardapio-----------------*/
 
 /* -----------------pagina especiais -----------------*/
@@ -485,7 +587,7 @@ td, th{
 
 footer{
 	text-align: center;
-	background: url("footsvt.png");
+	background: url("images/footsvt.png");
 	padding: 40px 0;
 }
 
