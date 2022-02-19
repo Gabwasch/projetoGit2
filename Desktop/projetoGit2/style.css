@@ -1,6 +1,5 @@
 header{
 	background: linear-gradient(#ffffff, #ffffff);
-	padding: 20px 0;
 }
 title:after{
 	content:"✵"; 
@@ -129,21 +128,28 @@ body{
 }
 /*------------------Configuração do cabeçalho----------------------*/
 .logo{
-	position: relative;
+	position: inherit;
+	padding: 10px 0 0 0;
 	width: 940px;
 	margin: 0 auto;
 }
 .login-menu{
 	position: relative;
-	float: inline-end;
-	width: 30%;
-	margin: 0px 800px;
+	float: left;
+	margin: 100px;
+	padding: 5px 25px;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 20px #F08080;
+	border: 5px solid rgb(160, 50, 50);
 }
 
 .menu-completo{
-	position: relative;
-	width: 700px;
-	margin: 0px 450px;
+	text-align: center;
+	margin: 3px 0px;
+	padding: 2px 5px ;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 20px #F08080;
+	border: 5px solid rgb(160, 50, 50);
 }
 
 nav li{
