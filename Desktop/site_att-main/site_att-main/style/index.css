@@ -1,0 +1,212 @@
+.Titulo-principal{
+	text-align: left;
+	text-shadow: 2px 2px red;
+	font-size: 2em;
+	margin: 0em 1em 0em;
+	color: white;
+	clear: left;
+}
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	color: red;
+	font-weight: bold;
+}
+
+.principal em{
+	font-style: italic;
+}
+
+.minions{
+	width: 120px;
+	float: left;
+	box-shadow: -5px -5px 30px #000000;
+	margin: 0 20px 20px 0;
+}
+
+#didio{
+	width: 50%;
+}
+
+/*-----------------------------inicio de imagens na area central-index--------------------------*/
+
+.img-index{
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+	width: 100%;
+}
+
+.img1{
+	position: relative;
+	top: 50px;
+	left: 5%;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+	transition: 1s all;
+	width: 248px;
+	height: 370px;
+	background: url(../images/sv1.jpg) no-repeat;
+	background-size: contain;
+}
+
+#sv1{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	background-size: cover;
+}
+
+.img1:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.img2{
+	position: relative;
+	top: -320px;
+	left: 29%;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+	transition: 1s all;
+	width: 248px;
+	height: 370px;
+	background: url(../images/sv2.jpg) no-repeat;
+	background-size: contain;
+}
+
+#sv2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	background-size: cover;
+}
+
+.img2:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.img3{
+	position: relative;
+	top: -690px;
+	left: 51%;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+	transition: 1s all;
+	width: 248px;
+	height: 370px;
+	background: url(../images/sv3.jpg) no-repeat;
+	background-size: contain;
+}
+
+#sv3{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	background-size: cover;
+}
+
+.img3:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.img4{
+	position: relative;
+	top: -1060px;
+	left: 75%;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+	transition: 1s all;
+	width: 248px;
+	height: 370px;
+	background: url(../images/sv4.jpg) no-repeat;
+	background-size: contain;
+}
+
+#sv4{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	background-size: cover;
+}
+
+.img4:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+.img5{
+	position: relative;
+	top: -960px;
+	left: 25%;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+	transition: 1s all;
+	width: 248px;
+	height: 329px;
+	background: url(../images/sv5.jpg) no-repeat;
+	background-size: contain;
+}
+
+#sv5{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	background-size: cover;
+}
+
+.img5:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.img6{
+	position: relative;
+	top: -1289px;
+	left: 60%;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	border-radius: 10px 10px 10px 10px;
+	transition: 1s all;
+	width: 248px;
+	height: 370px;
+	background: url(../images/sv6.jpg) no-repeat;
+	background-size: contain;
+}
+
+#sv6{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	background-size: cover;
+}
+
+.img6:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+/*-------------------------fim de imagens na area central-index---------------------*/
+
+.voltar{
+	position: relative;
+	top: -700px;
+	margin: 55px;
+}

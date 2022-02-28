@@ -1,0 +1,111 @@
+.Titulo-principal{
+	text-align: left;
+	text-shadow: 2px 2px red;
+	font-size: 2em;
+	margin: 0em 1em 0em;
+	color: white;
+	clear: left;
+}
+
+
+.principal {
+	color: white;
+	position: relative;
+	top: 25px;
+	background: #F08080;
+	padding: 30px 20px;
+	box-shadow: inset 0 0 40px #8B0000;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	margin: 0 20%;
+	border-radius: 10px 10px 10px 10px;
+}
+/* ---------------------paragrafo 2 da pagina principal----------------------*/
+.principal2 {
+	color: white;
+	position: relative;
+	top: 50px;
+	background: #F08080;
+	padding: 30px 20px;
+	box-shadow: inset 0 0 40px #8B0000;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	margin: 0 20%;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	color: red;
+	font-weight: bold;
+}
+
+.principal em{
+	font-style: italic;
+}
+
+.minions{
+	width: 120px;
+	float: left;
+	box-shadow: -5px -5px 30px #000000;
+	margin: 0 20px 20px 0;
+}
+/*--------------------------Conteúdo de Benefícios--------------------*/
+.beneficios{
+    justify-content: space-around;
+	color: white;
+	position: relative;
+	top: 75px;
+	background: #F08080;
+	padding: 30px 20px;
+	box-shadow: inset 0 0 40px #8B0000;
+	box-sizing: border-box;
+	border: 2px solid #8B0000;
+	margin: 0 20%;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+.itens{
+	line-height: 1.5;
+}
+
+/*------------------------contúdo antes de cada item em benefícios------------------*/
+
+.itens:before{
+	content: "✵";
+}
+
+/*marcação específica para qualquer elemento de uma lista abaixo:*/
+
+.itens:nth-child(2n){
+	font-weight: bold;
+}
+
+
+.sorvetin{
+	position: relative;
+	width: 50%;
+	opacity: 1;
+	box-shadow: 10px 10px 20px #000000;
+	margin: 20px 0 0 20px;
+}
+.sorvetin:hover{
+	opacity: 0.3;
+}
+
+#didio{
+	width: 50%;
+}
