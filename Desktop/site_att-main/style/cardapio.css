@@ -1,3 +1,10 @@
+header{
+	position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+	z-index: 1;
+    top: 0;
+}
+
 .caixa2{
 	display: inline-block;
 	width: 100%;
@@ -16,6 +23,12 @@
 	width: 20%;
 	background-size: cover;
 }
+
+.container{
+	display: flex;
+	justify-content: center;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
   
 /* This container is needed to position the front and back side */
@@ -59,11 +72,9 @@
 
 .flip1-card {
 	position: relative;
-	top: 25px;
-	left: 5%;
-	margin: 0px;
+	margin: 50px 20px;
 	width: 248px;
-	height: 370px;
+	height: 270px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -122,9 +133,9 @@
 .flip2-card {
 	position: relative;
 	background-color: transparent;
-	margin: 50px 200px;
+	margin: 50px 20px;
 	width: 248px;
-	height: 370px;
+	height: 270px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -182,12 +193,10 @@
 /* The flip card container - set the width and height to whatever you want.*/
 .flip3-card {
 	position: relative;
-	top: -820px;
-	left: 28%;
 	background-color: transparent;
 	margin: 50px 20px;
 	width: 248px;
-	height: 370px;
+	height: 270px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -243,12 +252,10 @@
 /* The flip card container - set the width and height to whatever you want.*/
 .flip4-card {
 	position: relative;
-	top: -845px;
-	left: 40%;
 	background-color: transparent;
 	margin: 50px 20px;
 	width: 248px;
-	height: 370px;
+	height: 270px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -304,12 +311,10 @@
 /* The flip card container - set the width and height to whatever you want.*/
 .flip5-card {
 	position: relative;
-	top: -1665px;
-	left: 53%;
 	background-color: transparent;
 	margin: 50px 20px;
 	width: 248px;
-	height: 370px;
+	height: 270px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -348,7 +353,7 @@
   
 /* Style the front side (fallback if image is missing) */
 .flip6-card-front {
-	background: url(../images/sv6.jpg);
+	background: url(../images/sv6.jpg) no-repeat;
 	background-size: contain;
 	color: black;
 	box-sizing: border-box;
@@ -363,12 +368,10 @@
 /* The flip card container - set the width and height to whatever you want.*/
 .flip6-card {
 	position: relative;
-	top: -1690px;
-	left: 68%;
 	background-color: transparent;
 	margin: 50px 20px;
 	width: 248px;
-	height: 370px;
+	height: 270px;
 	border: 2px solid #8B0000;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }

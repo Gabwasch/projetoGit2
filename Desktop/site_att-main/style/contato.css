@@ -1,4 +1,11 @@
 /*-----------------------inicio da pagina contato------------------*/
+header{
+	position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+	z-index: 1;
+    top: 0;
+}
+
 form{
 	position: relative;
 	left: 25%;
@@ -61,7 +68,7 @@ form label, form legend{
 
 .horario{
 	position: relative;
-	left: 40%;
+	left: 10%;
 	background: green;
 	color: white;
 	margin: 20px 0 40px;

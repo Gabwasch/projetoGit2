@@ -1,8 +1,16 @@
+header{
+	position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+	z-index: 1;
+    top: 0;
+}
+
 .Titulo-principal{
 	text-align: left;
 	text-shadow: 2px 2px red;
 	font-size: 2em;
 	margin: 0em 1em 0em;
+	padding: 0px 0 30px 0 ;
 	color: white;
 	clear: left;
 }
@@ -30,21 +38,120 @@
 	width: 50%;
 }
 
+/*--------------------------configuração do slideshow-------------------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /*-----------------------------inicio de imagens na area central-index--------------------------*/
 
 .img-index{
-	justify-content: center;
-	align-items: center;
+	background: #717171;
+	display: flex;
+	position: relative;
+	margin: auto;
+	width: 880px;display: flex;
+	flex-flow: row;
+	overflow-x: scroll;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
-	width: 100%;
 }
 
 .img1{
+	display: flex;
 	position: relative;
-	top: 50px;
-	left: 5%;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
@@ -53,6 +160,9 @@
 	height: 370px;
 	background: url(../images/sv1.jpg) no-repeat;
 	background-size: contain;
+	margin: 25px;
+	padding-bottom: 50%;
+	white-space: nowrap;
 }
 
 #sv1{
@@ -69,9 +179,8 @@
 }
 
 .img2{
+	display: flex;
 	position: relative;
-	top: -320px;
-	left: 29%;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
@@ -80,6 +189,9 @@
 	height: 370px;
 	background: url(../images/sv2.jpg) no-repeat;
 	background-size: contain;
+	margin: 25px;
+	padding-bottom: 50%;
+	white-space: nowrap;
 }
 
 #sv2{
@@ -96,9 +208,8 @@
 }
 
 .img3{
+	display: inline-block;
 	position: relative;
-	top: -690px;
-	left: 51%;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
@@ -107,6 +218,9 @@
 	height: 370px;
 	background: url(../images/sv3.jpg) no-repeat;
 	background-size: contain;
+	margin: 25px;
+	padding-bottom: 50%;
+	white-space: nowrap;
 }
 
 #sv3{
@@ -123,9 +237,8 @@
 }
 
 .img4{
+	display: inline-block;
 	position: relative;
-	top: -1060px;
-	left: 75%;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
@@ -134,6 +247,8 @@
 	height: 370px;
 	background: url(../images/sv4.jpg) no-repeat;
 	background-size: contain;
+	margin: 25px;
+	white-space: nowrap;
 }
 
 #sv4{
@@ -151,9 +266,8 @@
 
 
 .img5{
+	display: inline-block;
 	position: relative;
-	top: -960px;
-	left: 25%;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
@@ -162,6 +276,8 @@
 	height: 329px;
 	background: url(../images/sv5.jpg) no-repeat;
 	background-size: contain;
+	margin: 25px;
+	white-space: nowrap;
 }
 
 #sv5{
@@ -178,9 +294,8 @@
 }
 
 .img6{
+	display: inline-block;
 	position: relative;
-	top: -1289px;
-	left: 60%;
 	box-sizing: border-box;
 	border: 2px solid #8B0000;
 	border-radius: 10px 10px 10px 10px;
@@ -189,6 +304,8 @@
 	height: 370px;
 	background: url(../images/sv6.jpg) no-repeat;
 	background-size: contain;
+	margin: 25px;
+	white-space: nowrap;
 }
 
 #sv6{
@@ -207,6 +324,5 @@
 
 .voltar{
 	position: relative;
-	top: -700px;
 	margin: 55px;
 }
